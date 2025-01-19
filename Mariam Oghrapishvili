@@ -1,0 +1,358 @@
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* ზოგადი სტილი */
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #575757;
+            color: #f4f4f4;
+        }
+
+        /* Home სექციის სტილი */
+        section {
+            padding: 50px 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        .portfolio-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            object-fit: cover;
+        }
+
+        .portfolio-content {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            margin-top: 20px;
+        }
+
+        .portfolio-content h2 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        .portfolio-content p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* სექციების ფოტოების სტილი */
+        .section-image {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-content {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .section-content p {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .pdf-link {
+            margin-left: 20px;
+            font-size: 1rem;
+            color: #C48E72;
+            text-decoration: none;
+        }
+
+        .pdf-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Services სექციის სტილი */
+        .service {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .service:hover {
+            background-color: #e4e4e4;
+        }
+
+        .service h3 {
+            font-size: 1.5rem;
+            color: #C48E72;
+            margin: 0;
+        }
+
+        .service-details {
+            display: none;
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .service-details img {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+    </style>
+    <title>Website with Navigation</title>
+</head>
+<body>
+    <nav>
+        <a href="#home and contact" class="home">home and contact</a>
+        <a href="#services and Experience">services and Experience</a>
+        <a href="#skills">skills</a>
+        <a href="#Education and Achievements">Education and Achievements</a>
+    </nav>
+    <section id="home">
+        <div class="portfolio-container">  
+        <img src="666.png" alt="Portfolio Image">
+        </div>
+        <div class="portfolio-content">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Explore my work and projects.</p>
+        </div>
+    </section>
+</body>
+        </div>
+    </section>
+  <!-- services and Experience სექცია -->
+<section id="services and Experience">
+    <h2>services and Experience</h2>
+    <!-- Architectural Projects -->
+    <div class="service" onclick="toggleDetails('arch')">
+        <h3>Architectural Projects</h3>
+        <div id="arch" class="service-details">
+        <p>Designing and planning architectural solutions for various types of buildings.I specialize in residential, commercial, and industrial architectural projects. My goal is to create functional and aesthetically pleasing spaces that meet my clients's needs.</p>
+<a href="Single-family house.pdf" class="pdf-link" target="_blank">View PDF</a>
+<a href="Single-family house2.pdf" class="pdf-link" target="_blank">View PDF</a>
+<a href="Agricultural storage warehouse.pdf" class="pdf-link" target="_blank">View PDF</a>
+<a href="3D Floor Plan.jpg" class="pdf-link" target="_blank">View JPG</a>
+        </div>
+   </div>
+        <!-- Graphic Design -->
+        <div class="service" onclick="toggleDetails('graphic')">
+            <h3>Graphic Design</h3>
+            <div id="graphic" class="service-details">
+            <p>Creating visually appealing and functional designs for various platforms.I offer graphic design services, including logo design, branding, advertising materials, and more. I ensure that your visual identity aligns with your brand’s values and goals.</p>
+<a href="Artboard 11.png" class="pdf-link" target="_blank">View JPG</a>
+<a href="Artboard 10.png" class="pdf-link" target="_blank">View JPG</a>
+<a href="Untitled.png" class="pdf-link" target="_blank">View JPG</a>
+
+            </div>
+        </div>
+        <!-- Civil Engineering -->
+        <div class="service" onclick="toggleDetails('civil')">
+            <h3>Civil Engineering</h3>
+            <div id="civil" class="service-details">
+            <p>Designing infrastructure and ensuring structural integrity of buildings and roads.I provide comprehensive civil engineering services for road construction, buildings, and structural assessments, ensuring safety and durability in all projects.</p>
+            </div>
+        </div>
+        <!-- Other Services -->
+        <div class="service" onclick="toggleDetails('other')">
+            <h3>Other</h3>
+            <div id="other" class="service-details">
+            <p>Providing custom solutions tailored to unique client needs.Whether it's consultation, project management, or any other specialized service, I offer flexible and tailored solutions to meet your specific requirements.
+I am proficient in office software and capable of working in Excel, as well as using various social media platforms thoroughly. I can create presentations in PowerPoint and hold a B2 level of English proficiency. Additionally, I am skilled in using Paint and Paint 3D, as well as editing tools like CapCut and other editing programs.
+I am experienced in utilizing different types of maps, preparing internal survey drawings, and addressing architectural, structural, and design-related matters effectively:</p>
+<a href="''Food Safety'' power pint project.pdf" class="pdf-link" target="_blank">View PDF</a>
+<a href="3.jpg" class="pdf-link" target="_blank">View JPG</a>
+<a href="14.jpg" class="pdf-link" target="_blank">View JPG</a>
+<a href="13.jpg" class="pdf-link" target="_blank">View JPG</a>
+
+
+            </div>
+        </div>
+
+    </section>
+    <!-- Skills სექცია -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <!-- Skill 1 -->
+            <h3>Remote Work Skills</h3>
+            <p>Ability to manage time effectively and work independently in a remote environment.Expertise in remote project management, communication, and staying organized in a virtual setting.</p>
+        <!-- Skill 2 -->
+            <h3>Client Communication</h3>
+            <p>Effectively collaborate with clients to understand and meet their needs.Proficient in digital communication tools and ensuring client satisfaction through regular updates and feedback loops.</p>
+        </div>   
+       <title>Interactive Education and Achievements Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .education-item {
+            border: 2px solid #333;
+            border-radius: 25px;
+          padding: 15px 20px;
+            margin: 10px 0;
+            background-color: #f9f9f9;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        .education-item:hover {
+            background-color: #ececec;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .education-details {
+            margin-top: 10px;
+            display: none;
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <section id="Education and Achievements">
+        <h2>Education and Achievements</h2>
+        <!-- Education and Achievements Item 1 -->
+        <div class="Education and Achievements-item" onclick="toggleDetails('edu1')">
+        <div class="education-item" onclick="toggleDetails('ach1')">
+            <h3>Mukhrani N3 Public School</h3>
+            <div id="ach1" class="education-details">
+            <p>Studied until 9th grade, achieving excellent results (10 out of 10).Graduated with honors and received a computer from the Ministry of Education.Participated in the Anaklia Future Camp, receiving a certificate of participation and engaging in forward-thinking activities.Successfully participated in the Georgian national intellectual competition “Etaloni” and received a certificate of recognition.</p>
+<a href="1.png" class="pdf-link" target="_blank">View JPG</a>
+<a href="2.png0" class="pdf-link" target="_blank">View JPG</a>
+<a href="7.png" class="pdf-link" target="_blank">View JPG</a>
+<a href="15.png" class="pdf-link" target="_blank">View JPG</a>
+
+
+            </div>
+        </div>
+        <!-- Achievement Item 2 -->
+        <div class="education-item" onclick="toggleDetails('ach2')">
+            <h3>Vaziani Public School</h3>
+            <div id="ach2" class="education-details">
+            <p>Studied from 9th to 12th grade.Narrowly missed a gold medal but graduated with a silver medal for exceptional academic achievements.</p>
+            <a href="5.png" class="pdf-link" target="_blank">View JPG</a>
+            <a href="6.png" class="pdf-link" target="_blank">View JPG</a>
+            <a href="Untitled-1.pdf" class="pdf-link" target="_blank">View JPG</a>
+            <a href="8.png" class="pdf-link" target="_blank">View PNG</a>
+
+            </div>
+        </div>
+        <!-- Achievement Item 3 -->
+        <div class="education-item" onclick="toggleDetails('ach3')">
+            <h3>NB Academy</h3>
+            <div id="ach3" class="education-details">
+            <p>Earned bilingual certificates for professional-level training in ArchiCAD 25 and Adobe Photoshop.Demonstrated advanced design skills in both programs.</p>
+                       <a href="unnamed (2).jpg" class="pdf-link" target="_blank">View JPG</a>
+                       <a href="unnamed (6).jpg" class="pdf-link" target="_blank">View JPG</a>
+
+            </div>
+        </div>
+        <!-- Achievement Item 4 -->
+        <div class="education-item" onclick="toggleDetails('ach4')">
+            <h3>Georgian Technical University</h3>
+            <div id="ach4" class="education-details">
+            <p>Currently studying Civil Engineering.Focusing on structural and infrastructure design.</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
+    <style>
+    nav {
+        display: flex;
+        justify-content: space-between; /* space-around => space-between */
+        padding: 10px;
+        background-color: #333;
+        color: white;
+    }
+       section {
+        padding: 50px 20px;
+        margin: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    #home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        text-align: center;
+        background-color: #f4f4f4;
+    .portfolio-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        object-fit: cover;
+    }
+    .portfolio-content {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #f4f4f4;
+        padding: 20px;
+        border-radius: 10px;
+        width: 90%;
+        margin-top: 20px;
+    }
+    .portfolio-content h2 {
+        margin: 0;
+        font-size: 3rem;
+    }
+    .portfolio-content p {
+        margin-top: 10px;
+        font-size: 1.2rem;
+    }
+
